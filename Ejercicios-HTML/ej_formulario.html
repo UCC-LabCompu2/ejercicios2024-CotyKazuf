@@ -18,26 +18,53 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+<form>
+    <p>
+        Nombre: <input name="nombre" placeholder="Ingrese su nombre">
+    </p>
+    <p>
+        Apellido: <input name="apellido" placeholder="Ingrese su apellido">
+    </p>
+    <p>
+        Sexo: <input type="radio" name="gender" value="male"> Hombre
+        <input type="radio" name="gender" value="female"> Mujer
 
-Agregue un comentario:
-
-Boton de Enviar
-
+    </p>
+    <p>
+        Edad: <input type="number" name="years" min="0" max="120" step="any" placeholder="ej. 21">
+    </p>
+    <p>
+        Email: <input type="email" name="email" placeholder="abc@gmail.com">
+    </p>
+    <p>
+        Usuario: <input type="text" name="usuario" placeholder="Ingrese nombre de usuario">
+    </p>
+    <p>
+        Contraseña: <input type="password" name="contraseña" placeholder="Ingrese la contraseña">
+    </p>
+    <p>
+        Confirmar la contraseña: <input type="password" name="contraseña" placeholder="Confirmar contraseña">
+    </p>
+    <p>
+        Servicios:
+        <select name="servicios">
+            <option value="free">Free</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select>
+    </p>
+    <p>
+        Tema: <input type="checkbox" name="tema1" value="politica">Politica
+        <input type="checkbox" name="tema2" value="negocios">Negocios
+        <input type="checkbox" name="tema3" value="tecnologia">Tecnologia
+        <input type="checkbox" name="tema4" value="salud">Salud
+    </p>
+    <p>
+        Agregue un comentario: <textarea type="text" name="comentario" placeholder="Ingrese comentario" size="50"></textarea>
+    </p>
+    <button type="button">Suscribirse</button>
+</form>
 
 </body>
 </html>
