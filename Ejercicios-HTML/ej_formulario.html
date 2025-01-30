@@ -21,50 +21,50 @@
 
 <form id="formulario_suscripcion">
     <p>
-        Nombre: <input name="nombre" placeholder="Ingrese su nombre">
+        <label for="nombre">Nombre:</label> <input name="nombre" placeholder="Ingrese su nombre" id="nombre">
     </p>
     <p>
-        Apellido: <input name="apellido" placeholder="Ingrese su apellido">
+        <label for="apellido">Apellido:</label> <input name="apellido" placeholder="Ingrese su apellido" id="apellido">
     </p>
     <p>
-        Sexo: <input type="radio" name="gender" value="male"> Hombre
-        <input type="radio" name="gender" value="female"> Mujer
+        Sexo: <input type="radio" name="gender" value="male" id="hombre"> <label for="hombre">Hombre</label>
+        <input type="radio" name="gender" value="female" id="mujer"> <label for="mujer">Mujer</label>
 
     </p>
     <p>
-        Edad: <input type="number" name="years" min="0" max="120" step="any" placeholder="ej. 21">
+        <label for="edad">Edad: </label><input type="number" name="years" min="0" max="120" step="any" placeholder="ej. 21" id="edad">
     </p>
     <p>
-        Email: <input type="email" name="email" placeholder="abc@gmail.com">
+        <label for="email">Email:</label> <input type="email" name="email" placeholder="abc@gmail.com" id="email">
     </p>
     <p>
-        Usuario: <input type="text" name="usuario" placeholder="Ingrese nombre de usuario">
+        <label for="usuario">Usuario:</label> <input type="text" name="usuario" placeholder="Ingrese nombre de usuario" id="usuario">
     </p>
     <p>
-        Contraseña: <input type="password" name="contraseña" placeholder="Ingrese la contraseña">
+        <label for="contraseña">Contraseña:</label> <input type="password" name="contraseña" placeholder="Ingrese la contraseña" id="contraseña">
     </p>
     <p>
-        Confirmar la contraseña: <input type="password" name="contraseña" placeholder="Confirmar contraseña">
+        <label for="ccontraseña">Confirmar la contraseña:</label>  <input type="password" name="contraseña" placeholder="Confirmar contraseña" id="ccontraseña">
     </p>
     <p>
-        Servicios:
-        <select name="servicios">
+        <label for="servicios">Servicios:</label>
+        <select name="servicios" id="servicios">
             <option value="free">Free</option>
             <option value="standard">Standard</option>
             <option value="premium">Premium</option>
         </select>
     </p>
     <p>
-        Tema: <input type="checkbox" name="tema1" value="politica">Politica
-        <input type="checkbox" name="tema2" value="negocios">Negocios
-        <input type="checkbox" name="tema3" value="tecnologia">Tecnologia
-        <input type="checkbox" name="tema4" value="salud">Salud
+        Tema: <input type="checkbox" name="tema1" value="politica" id="politica"><label for="politica">Politica</label>
+        <input type="checkbox" name="tema2" value="negocios" id="negocios"><label for="negocios">Negocios</label>
+        <input type="checkbox" name="tema3" value="tecnologia" id="tecnologia"><label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" name="tema4" value="salud" id="salud"><label for="salud">Salud</label>
     </p>
     <p>
-        Agregue un comentario: <textarea type="text" name="comentario" placeholder="Ingrese comentario" size="50"></textarea>
+        <label for="comentario">Agregue un comentario: </label><textarea type="text" name="comentario" placeholder="Ingrese comentario" size="50" id="comentario"></textarea>
     </p>
 
-    <button type="button">Suscribirse</button>
+    <button type="button" id="suscribirse"><label for="suscribirse">Suscribirse</label></button>
 </form>
 
 </body>
