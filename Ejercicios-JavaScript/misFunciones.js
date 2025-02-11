@@ -48,3 +48,28 @@ function mostrar_ocultar(valorMO){
         document.getElementById("divMO").style.display='none';
     }
 }
+
+function calcularSuma(){
+    var num1, num2;
+    num1= Number(document.getElementsByName("sum_num1")[0].value);
+    num2= document.getElementsByName("sum_num2")[0].value;
+    document.getElementsByName("sum_total")[0]. value = num1 + Number(num2);
+}
+function calcularRes(){
+    var numr1, numr2;
+    numr1= Number(document.getElementsByName("res_num1")[0].value);
+    numr2= document.getElementsByName("res_num2")[0].value;
+    document.getElementsByName("res_total")[0]. value = numr1 - Number(numr2);
+}
+function calcularMul(){
+    var num1, num2;
+    num1= Number(document.getElementsByName("mul_num1")[0].value);
+    num2= document.getElementsByName("mul_num2")[0].value;
+    document.getElementsByName("mul_total")[0]. value = num1 * Number(num2);
+}
+function calcularDiv(){
+    var num1, num2;
+    num1= Number(document.getElementsByName("div_num1")[0].value);
+    num2= document.getElementsByName("div_num2")[0].value;
+    document.getElementsByName("div_total")[0]. value = num1 / Number(num2);
+}
