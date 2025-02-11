@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    background: linear-gradient(to right, #f1eaff, #d3b6ff);
+}
+div{
+    border: 2px solid #5d00ff; /** el 2px es el ancho y el solid es el tipo de linea **/
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    box-shadow: 10px 12px #5d00ff;
+}
+#principal{
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+}
+div.especial h3{
+    font-size: 30px;
+    text-shadow: 10px 5px #d3b6ff;
+}
