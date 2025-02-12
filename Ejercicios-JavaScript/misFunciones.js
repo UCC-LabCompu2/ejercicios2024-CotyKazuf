@@ -132,7 +132,7 @@ function dibujarCirCuad(){
     ctx.fillRect(0+margen,yMax-40-margen,40,40);
     ctx.arc(xMax/2,yMax/2,20,0,3*Math.PI);
     ctx.stroke();
-    ctx.fillStyle= "#7b7552";
+    ctx.fillStyle= "#ff0000";
     ctx.fill();
 }
 var bandera;
@@ -153,4 +153,45 @@ function limpiarCanvas(){
     var canvas=document.getElementById("canvasAAdibujar");
     var ctx=canvas.getContext("2d");
     canvas.width=canvas.width;
+}
+
+function dibujarCuadriculado(){
+    var canvas=document.getElementById("miCanvas");
+    var ctx = canvas.getContext("2d");
+    var alturaMax=canvas.height;
+    var anchoMax=canvas.width;
+    //dibujar lineas horizontales
+    ctx.beginPath();
+    for (var i=0; i<alturaMax;){
+        ctx.moveTo(0,20);
+        ctx.lineTo(anchoMax,20);
+        ctx.strokeStyle="#fff7b5";
+        ctx.stroke();
+        i=i+20;
+    }
+    ctx.closePath();
+    //dibujar lineas verticales
+    ctx.beginPath();
+    for (var i=0; i<anchoMax;){
+        ctx.moveTo(i,0);
+        ctx.lineTo(i,alturaMax);
+        ctx.strokeStyle="#fff7b5";
+        ctx.stroke();
+        i=i+20;
+    }
+    ctx.closePath();
+    //ejex
+    ctx.beginPath();
+    ctx.moveTo(0,alturaMax/2);
+    ctx.lineTo(anchoMax,alturaMax/2);
+    ctx.strokeStyle="#604736";
+    ctx.stroke();
+    ctx.closePath();
+    //ejey
+    ctx.beginPath();
+    ctx.moveTo(anchoMax/2,0);
+    ctx.lineTo(anchoMax/2,alturaMax);
+    ctx.strokeStyle="#604736";
+    ctx.stroke();
+    ctx.closePath();
 }
